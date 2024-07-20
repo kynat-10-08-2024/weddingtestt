@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" id="details-link" data-en="Details" data-uk="Деталі">Details</a></li>
+                <li><a href="#" id="info-link" data-en="Itinerary" data-uk="План">Itinerary</a></li>
+                <li class="title">N & K</li>
+                <li><a href="#" id="venue-link" data-en="Venue" data-uk="Локація">Venue</a></li>
+                <li><a href="#" id="photos-link" data-en="Photos" data-uk="Фото">Photos</a></li>
+            </ul>
+            <li>
+                <select id="language-switcher" class="language-switcher">
+                    <option value="en">English</option>
+                    <option value="uk">Українська</option>
+                </select>
+            </li>
+        </nav>
+        <main>
+            <h2 data-en="THE" data-uk="СВЯТО">THE</h2>
+            <h3 data-en="Wedding" data-uk="Одруження">Wedding</h3>
+            <h2 data-en="OF" data-uk="">OF</h2>
+            <h1 data-en="NATALIE & KIRILL" data-uk="НАТАЛІЇ ТА КИРИЛА">NATALIE & KIRILL</h1>
+            <h4 data-en="OCTOBER 8, 2024" data-uk="8 ЖОВТНЯ 2024">OCTOBER 8, 2024</h4>
+            <div id="countdown"></div>
+        </main>
+
+        <div id="venue" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 data-en="Venue" data-uk="Місце">Venue</h2>
+                <p data-en="Villa Borgo de Brandi" data-uk="Вілла Borgo de Brandi">Villa Borgo de Brandi</p>
+                <p data-en="Address: Loc. Caminata, 3, 53035 Monteriggioni, SI, Italia" data-uk="Адреса: Loc. Caminata, 3, 53035 Monteriggioni, SI, Italia">Address: Loc. Caminata, 3, 53035 Monteriggioni, SI, Italia</p>
+                <div class="venue-photos">
+                    <img src="venue1.jpg" alt="Villa photo 1">
+                    <img src="venue2.jpg" alt="Villa photo 2">
+                    <img src="venue3.jpg" alt="Villa photo 3">
+                </div>
+            </div>
+        </div>
+
+        <div id="info" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 data-en="Timeline of Events" data-uk="Хронологія подій">Timeline of Events</h2>
+                <img src="timeline.png" alt="Wedding Timeline" class="timeline">
+            </div>
+        </div>
+        <div id="details" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 data-en="Preferred Colors for Guests' Outfits" data-uk="Бажані кольори для одягу гостей">Preferred Colors for Guests' Outfits</h2>
+                <div class="color-boxes">
+                    <div class="color-box" style="background-image: url('color1.jpg');"></div>
+                    <div class="color-box" style="background-image: url('color2.jpg');"></div>
+                    <div class="color-box" style="background-image: url('color3.jpg');"></div>
+                    <div class="color-box" style="background-image: url('color4.jpg');"></div>
+                    <div class="color-box" style="background-image: url('color5.jpg');"></div>
+                    <div class="color-box" style="background-image: url('color6.jpg');"></div>
+                    <div class="color-box" style="background-image: url('color7.jpg');"></div>
+                </div>
+            </div>
+        </div>
+
+         <div id="photos" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 data-en="Wedding Photos" data-uk="Весільні Фото"> Photos</h2>
+                <a href="https://photos.app.goo.gl/6krcemK2HMGqR7NF9" target="_blank" class="photo-button" data-en="Add Your Photos" data-uk="Додайте свої фото">Add Your Photos</a>
+            </div>
+        </div>
+
+        <footer>
+            <p data-en="Thank you for joining us on our special day!" data-uk="Дякуємо, що приєдналися до нас у цей особливий день!">Thank you for joining us on our special day!</p>
+        </footer>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

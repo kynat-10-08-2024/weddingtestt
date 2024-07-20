@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #fff;
+}
+
+.container {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 4em;
+
+    top: 0;
+    background: #fff;
+    padding-top: 1em;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+nav ul .title {
+    font-size: 2em;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+    margin-bottom: 0.5em;
+}
+
+
+main h2 {
+    font-size: 1.5em;
+    margin: 0.5em 0;
+    letter-spacing: 5px;
+    margin-bottom: 0.5em;
+}
+
+main h3 {
+    font-size: 3.2em;
+    margin: 0.2em 0;
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-style: italic;
+    margin-bottom: 0.5em;
+}
+
+main h1 {
+    font-size: 2em;
+    margin: 0.5em 0;
+    font-weight: lighter;
+    letter-spacing: 6px;
+    margin-bottom: 0.5em;
+}
+
+main h4 {
+    font-size: 1.3em;
+    margin: 1.5em 0;
+    letter-spacing: 5px;
+    margin-bottom: 0.5em;
+}
+
+#countdown {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    text-align: left;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.color-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.color-box {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.timeline {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.venue-photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.venue-photos img {
+    width: 100%;
+    max-width: 375px;
+}
+
+.photo-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.photo-button:hover {
+    background-color: #444;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul .title {
+        margin: 1em 0;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    .color-box {
+        width: 80px;
+        height: 80px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
+
+.language-switcher {
+       list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10em;
+
+    top: 0;
+    background: #fff;
+    padding-top: 0em; 
+}
+
+footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 65px;
+      background-color: #B3BC91; #9F9C8F #A2BCC9 #B3BC91
+      color: white;
+      text-align: center;
+}
+
